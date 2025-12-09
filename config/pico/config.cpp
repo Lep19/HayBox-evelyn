@@ -16,34 +16,35 @@
 Config config = default_config;
 
 GpioButtonMapping button_mappings[] = {
-    { BTN_LF1, 2  },
-    { BTN_LF2, 3  },
-    { BTN_LF3, 4  },
-    { BTN_LF4, 5  },
-    { BTN_LF5, 1  },
+    { BTN_LF1, 27  },
+    { BTN_LF2, 22  },
+    { BTN_LF3, 20  },
+    { BTN_LF4, 18  },
+    { BTN_LF5, 26  },
+    { BTN_LF6, 21  },
+    { BTN_LF7, 19  },
 
-    { BTN_LT1, 6  },
-    { BTN_LT2, 7  },
+    { BTN_LT1, 16  },
+    { BTN_LT2, 14  },
+    { BTN_LT3, 15  },
+    { BTN_LT4, 17  },
 
-    { BTN_MB1, 0  },
-    { BTN_MB2, 10 },
-    { BTN_MB3, 11 },
+    { BTN_MB1, 8  },
 
-    { BTN_RT1, 14 },
-    { BTN_RT2, 15 },
-    { BTN_RT3, 13 },
-    { BTN_RT4, 12 },
-    { BTN_RT5, 16 },
+    { BTN_RT1, 11 },
+    { BTN_RT2, 13 },
+    { BTN_RT3, 12 },
+    { BTN_RT4, 9 },
+    { BTN_RT5, 10 },
 
-    { BTN_RF1, 26 },
-    { BTN_RF2, 21 },
-    { BTN_RF3, 19 },
-    { BTN_RF4, 17 },
-
-    { BTN_RF5, 27 },
-    { BTN_RF6, 22 },
-    { BTN_RF7, 20 },
-    { BTN_RF8, 18 },
+    { BTN_RF1, 7 },
+    { BTN_RF2, 5 },
+    { BTN_RF3, 3 },
+    { BTN_RF4, 1 },
+    { BTN_RF5, 6 },
+    { BTN_RF6, 4 },
+    { BTN_RF7, 2 },
+    { BTN_RF8, 0 },
 };
 const size_t button_count = sizeof(button_mappings) / sizeof(GpioButtonMapping);
 
