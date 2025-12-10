@@ -21,7 +21,7 @@ void DefaultKeyboardMode::UpdateKeys(const InputState &inputs) {
     Press(HID_KEY_M, inputs.rt3);
     Press(HID_KEY_N, inputs.rt4);
     Press(HID_KEY_O, inputs.rt2);
-    Press(HID_KEY_P, inputs.rf1);
+    Press(HID_KEY_P, inputs.rt1);
     Press(HID_KEY_Q, inputs.rt5);
     Press(HID_KEY_R, inputs.rf5);
     Press(HID_KEY_S, inputs.rf6);
