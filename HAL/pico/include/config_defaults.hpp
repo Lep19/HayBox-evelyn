@@ -150,7 +150,7 @@ const Config default_config = {
     .keyboard_modes = {
         KeyboardModeConfig {
             0,
-            22,
+            25,
             {
                 { BTN_LF7, HID_KEY_A },
                 { BTN_LF6, HID_KEY_B },
