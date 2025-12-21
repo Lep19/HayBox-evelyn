@@ -17,8 +17,8 @@ void Ultimate::UpdateDigitalOutputs(const InputState &inputs, OutputState &outpu
     outputs.triggerLDigital = inputs.lf4;
     outputs.triggerRDigital = inputs.rf5;
     outputs.start = inputs.mb1;
-    outputs.select = inputs.mb3;
-    outputs.home = inputs.mb2;
+    // outputs.select = inputs.mb3;
+    // outputs.home = inputs.mb2;
 
     // Turn on D-Pad layer by holding Mod X + Mod Y or Nunchuk C button.
     if ((inputs.lt1 && inputs.lt2) || inputs.nunchuk_c) {
@@ -26,6 +26,14 @@ void Ultimate::UpdateDigitalOutputs(const InputState &inputs, OutputState &outpu
         outputs.dpadDown = inputs.rt2;
         outputs.dpadLeft = inputs.rt3;
         outputs.dpadRight = inputs.rt5;
+    }
+
+    // Change Start button behavior for Switch buttons
+    if (inputs.lt1) {
+        outputs.home = inputs.mb1;
+    }
+    if (inputs.lt2) {
+        outputs.select = inputs.mb2;
     }
 }
 
@@ -263,4 +271,5 @@ void Ultimate::UpdateAnalogOutputs(const InputState &inputs, OutputState &output
         outputs.leftStickX = inputs.nunchuk_x;
         outputs.leftStickY = inputs.nunchuk_y;
     }
+
 }
